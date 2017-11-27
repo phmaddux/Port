@@ -26,8 +26,8 @@ theForge = Project.new({
     name: "The Forge",
     photo: "****",
     description: "This website was concieved from another passion of mine. Art, specifically metalworking ",
-    technical_description: 'This was the first "Full Stack" project that we did. I used the MERN stack, using react as the front end framework, and again focused on building "RESTful routes".'
-    link_to_project: "https://fathomless-basin-57658.herokuapp.com/",
+    technical_description: 'This was the first "Full Stack" project that we did. I used the MERN stack, using react as the front end framework, and again focused on building "RESTful routes".',
+    link_to_project: 'https://fathomless-basin-57658.herokuapp.com/',
     link_to_readMe: "https://github.com/phmaddux/project3",
     date_created: "October 19th, 2017",
 })
