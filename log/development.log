@@ -10453,3 +10453,165 @@ Processing by Api::ProjectsController#index as HTML
 Completed 200 OK in 45ms (Views: 26.3ms | ActiveRecord: 9.0ms)
 
 
+Started GET "/api/projects" for 127.0.0.1 at 2017-11-29 08:25:21 -0500
+Processing by Api::ProjectsController#index as HTML
+  [1m[36mProject Load (0.7ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+Completed 200 OK in 24ms (Views: 12.7ms | ActiveRecord: 10.9ms)
+
+
+Started GET "/api/projects" for 127.0.0.1 at 2017-11-29 08:52:23 -0500
+Processing by Api::ProjectsController#index as HTML
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.6ms)
+
+
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  [1m[35m (6.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (18.9ms)[0m  [1m[31mDELETE FROM "projects" WHERE "projects"."id" = $1[0m  [["id", 14]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "projects" WHERE "projects"."id" = $1[0m  [["id", 15]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "projects" WHERE "projects"."id" = $1[0m  [["id", 16]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (3.7ms)[0m  [1m[32mINSERT INTO "projects" ("name", "photo", "description", "technical_description", "link_to_project", "link_to_readMe", "date_created", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Who Has It?"], ["photo", "https://i.imgur.com/E60w0Ag.png"], ["description", "I drew inspiration for this site from the same place I always do with these projects, my life. When I left Tennessee I realized a lot of my stuff was missing, and being the kind of person I am I relaized I had lent out a lot of my stuff, forgotten who I had given it to, and then had no way to track it down. Therefore I created \"Who Has It?\", through it I could log in as a user, see who I had loaned what to, whether or not the item had been returned. Each of the three models will have full CRUD functionality in the next update."], ["technical_description", "This project is a MERN stack app built with Rails and React, containining three models including unique users, \"RESTful routing\", Postgres SQL for the database, and is deployed online via heroku."], ["link_to_project", "https://who-has-it.herokuapp.com/"], ["link_to_readMe", "https://github.com/phmaddux/Who_has_it/blob/master/README.md"], ["date_created", "November 17th, 2017"], ["created_at", "2017-11-29 13:53:19.776164"], ["updated_at", "2017-11-29 13:53:19.776164"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "projects" ("name", "photo", "description", "technical_description", "link_to_project", "link_to_readMe", "date_created", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Project Vagabond"], ["photo", "https://i.imgur.com/e9ltQKe.png"], ["description", "This project was to create a website that was about users leaving their thoughts on cities and attractions within the city. It was a group project we undertook together with 4 of us pair programming and planning all together. It was my primary experience pair programming and honestly was my favorite project as I felt I learnt the most working in a group."], ["technical_description", "This project was React blended with Ruby on Rails, we accomplished full CRUD functionality on the posts, used an interal API, and posted it to github."], ["link_to_project", "https://wander-wisely.herokuapp.com/"], ["link_to_readMe", "https://github.com/ern19/project_vagabond/blob/master/README.md"], ["date_created", "November 5th, 2017"], ["created_at", "2017-11-29 13:53:19.782324"], ["updated_at", "2017-11-29 13:53:19.782324"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "projects" ("name", "photo", "description", "technical_description", "link_to_project", "link_to_readMe", "date_created", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "The Forge"], ["photo", "https://i.imgur.com/rtJl5uz.png"], ["description", "This website was concieved from a passion of mine. Metalworking "], ["technical_description", "This was the first \"Full Stack\" project that we did. I used the MERN stack, using react as the front end framework, and again focused on building \"RESTful routes\"."], ["link_to_project", "https://fathomless-basin-57658.herokuapp.com/"], ["link_to_readMe", "https://github.com/phmaddux/project3"], ["date_created", "October 19th, 2017"], ["created_at", "2017-11-29 13:53:19.784670"], ["updated_at", "2017-11-29 13:53:19.784670"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/api/projects" for 127.0.0.1 at 2017-11-29 08:53:42 -0500
+Processing by Api::ProjectsController#index as HTML
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.4ms)
+
+
+  [1m[36mProject Load (2.9ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" LIMIT $1[0m  [["LIMIT", 11]]
+Started GET "/api/projects" for 127.0.0.1 at 2017-11-29 11:32:21 -0500
+  [1m[35m (6.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::ProjectsController#index as HTML
+  [1m[36mProject Load (0.7ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+Completed 200 OK in 25ms (Views: 15.2ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/api/projects" for 127.0.0.1 at 2017-11-29 11:33:03 -0500
+Processing by Api::ProjectsController#index as HTML
+  [1m[36mProject Load (0.7ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+Completed 200 OK in 19ms (Views: 10.4ms | ActiveRecord: 8.1ms)
+
+
+Started GET "/api/projects" for 127.0.0.1 at 2017-11-29 11:33:07 -0500
+Processing by Api::ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/projects" for 127.0.0.1 at 2017-11-29 11:33:20 -0500
+Processing by Api::ProjectsController#index as HTML
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/projects" for 127.0.0.1 at 2017-11-29 11:33:36 -0500
+Processing by Api::ProjectsController#index as HTML
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/projects" for 127.0.0.1 at 2017-11-29 11:33:36 -0500
+Processing by Api::ProjectsController#index as HTML
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/projects" for 127.0.0.1 at 2017-11-29 11:33:46 -0500
+Processing by Api::ProjectsController#index as HTML
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/projects" for 127.0.0.1 at 2017-11-29 11:33:57 -0500
+Processing by Api::ProjectsController#index as HTML
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/projects" for 127.0.0.1 at 2017-11-29 11:34:00 -0500
+Processing by Api::ProjectsController#index as HTML
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/projects" for 127.0.0.1 at 2017-11-29 11:34:04 -0500
+Processing by Api::ProjectsController#index as HTML
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/projects" for 127.0.0.1 at 2017-11-29 11:34:07 -0500
+Processing by Api::ProjectsController#index as HTML
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/projects" for 127.0.0.1 at 2017-11-29 11:34:24 -0500
+Processing by Api::ProjectsController#index as HTML
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/projects" for 127.0.0.1 at 2017-11-29 11:34:26 -0500
+Processing by Api::ProjectsController#index as HTML
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/projects" for 127.0.0.1 at 2017-11-29 11:34:49 -0500
+Processing by Api::ProjectsController#index as HTML
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/projects" for 127.0.0.1 at 2017-11-29 11:39:47 -0500
+Processing by Api::ProjectsController#index as HTML
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/projects" for 127.0.0.1 at 2017-11-29 11:40:04 -0500
+Processing by Api::ProjectsController#index as HTML
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.4ms)
+
+
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.6ms)[0m  [1m[31mDELETE FROM "projects" WHERE "projects"."id" = $1[0m  [["id", 17]]
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "projects" WHERE "projects"."id" = $1[0m  [["id", 18]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "projects" WHERE "projects"."id" = $1[0m  [["id", 19]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "projects" ("name", "photo", "description", "technical_description", "link_to_project", "link_to_readMe", "date_created", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Who Has It?"], ["photo", "https://i.imgur.com/E60w0Ag.png"], ["description", "I drew inspiration for this site from the same place I always do with these projects, my life. When I left Tennessee I realized a lot of my stuff was missing, and being the kind of person I am I relaized I had lent out a lot of my stuff, forgotten who I had given it to, and then had no way to track it down. Therefore I created \"Who Has It?\", through it I could log in as a user, see who I had loaned what to, whether or not the item had been returned. Each of the three models will have full CRUD functionality in the next update."], ["technical_description", "This project is a MERN stack app built with Rails and React, containining three models including unique users, \"RESTful routing\", Postgres SQL for the database, and is deployed online via heroku."], ["link_to_project", "https://who-has-it.herokuapp.com/"], ["link_to_readMe", "https://github.com/phmaddux/Who_has_it/blob/master/README.md"], ["date_created", "November 17th, 2017"], ["created_at", "2017-11-29 16:40:22.503480"], ["updated_at", "2017-11-29 16:40:22.503480"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "projects" ("name", "photo", "description", "technical_description", "link_to_project", "link_to_readMe", "date_created", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Project Vagabond"], ["photo", "https://i.imgur.com/e9ltQKe.png"], ["description", "This project was to create a website that was about users leaving their thoughts on cities and attractions within the city. It was a group project we undertook together with 4 of us pair programming and planning all together. It was my primary experience pair programming and honestly was my favorite project as I felt I learnt the most working in a group."], ["technical_description", "This project was React blended with Ruby on Rails, we accomplished full CRUD functionality on the posts, used an interal API, and posted it to github."], ["link_to_project", "https://wander-wisely.herokuapp.com/"], ["link_to_readMe", "https://github.com/ern19/project_vagabond/blob/master/README.md"], ["date_created", "November 5th, 2017"], ["created_at", "2017-11-29 16:40:22.506531"], ["updated_at", "2017-11-29 16:40:22.506531"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (2.8ms)[0m  [1m[32mINSERT INTO "projects" ("name", "photo", "description", "technical_description", "link_to_project", "link_to_readMe", "date_created", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "The Forge"], ["photo", "https://i.imgur.com/7KUhBf4.png"], ["description", "This website was concieved from a passion of mine. Metalworking "], ["technical_description", "This was the first \"Full Stack\" project that we did. I used the MERN stack, using react as the front end framework, and again focused on building \"RESTful routes\"."], ["link_to_project", "https://fathomless-basin-57658.herokuapp.com/"], ["link_to_readMe", "https://github.com/phmaddux/project3"], ["date_created", "October 19th, 2017"], ["created_at", "2017-11-29 16:40:22.512270"], ["updated_at", "2017-11-29 16:40:22.512270"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/api/projects" for 127.0.0.1 at 2017-11-29 11:40:28 -0500
+Processing by Api::ProjectsController#index as HTML
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.3ms)
+
+

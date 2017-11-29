@@ -24,7 +24,7 @@ projectVagabond.save
 
 theForge = Project.new({
     name: "The Forge",
-    photo: "https://i.imgur.com/rtJl5uz.png",
+    photo: "https://i.imgur.com/7KUhBf4.png",
     description: "This website was concieved from a passion of mine. Metalworking ",
     technical_description: 'This was the first "Full Stack" project that we did. I used the MERN stack, using react as the front end framework, and again focused on building "RESTful routes".',
     link_to_project: 'https://fathomless-basin-57658.herokuapp.com/',
