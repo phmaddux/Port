@@ -10615,3 +10615,9 @@ Processing by Api::ProjectsController#index as HTML
 Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.3ms)
 
 
+Started GET "/api/projects" for 127.0.0.1 at 2017-11-29 11:41:48 -0500
+Processing by Api::ProjectsController#index as HTML
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.4ms)
+
+
