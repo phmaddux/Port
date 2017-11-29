@@ -9,18 +9,6 @@ import ProjectList from './components/ProjectList.js'
 import Resume from './components/Resume.js'
 
 class App extends Component {
-  state = {
-    projects: []
-  }
-  async componentWillMount() {
-    try {
-      const response = await axios.get('/api/projects')
-      console.table(response.data)
-      this.setState({ projects: response.data })
-    } catch (error) {
-      console.log(error)
-    }
-  }
   render() {
     return (
       <div>

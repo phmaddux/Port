@@ -1,31 +1,38 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
 import styled from "styled-components";
+import axios from 'axios'
+
 
 class ProjectList extends Component {
+    state = {
+        projects: []
+    }
+    async componentWillMount() {
+        try {
+            const response = await axios.get('/api/projects')
+            console.table(response.data)
+            this.setState({ projects: response.data })
+        } catch (error) {
+            console.log(error)
+        }
+    }
     render() {
         return (
             <div>
-                <h1>Certifications</h1>
-                <h3>Talk about time at GA</h3>
-                <p>Lorem Ipsum</p>
-                <h2>Portfolio Projects</h2>
-                {this.props.projects.map((project, index) => {
+                <h1>These are an overview of some of the projects I completed while at General Assembly.</h1>
+                {this.state.projects.map((project, index) => {
                     return (
                         <div>
-                            <h2>{project.name}</h2>
                             <img src={project.photo} alt="" />
-                            <h3>{project.date}</h3>
+                            <h2>{project.name}</h2>
+                            <h3>Created on: {project.date_created}</h3>
                             <h3>Description: {project.description}</h3>
                             <h3>Technical Description: {project.technical_description}</h3>
-                            <ul>
-                                <li>
-                                    <Link to={project.link_to_project}>Project Demo</Link>
-                                </li>
-                                <li>
-                                    <Link to={project.link_to_readMe}>Project ReadMe</Link>
-                                </li>
-                            </ul>
+                            <div>
+                                <a href={project.link_to_project}>Project Demo</a>
+                            </div>
+                            <br></br>
                         </div>
                     )
                 })}
