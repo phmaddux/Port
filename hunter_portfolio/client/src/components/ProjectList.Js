@@ -3,7 +3,21 @@ import { Link } from 'react-router-dom'
 import styled from "styled-components";
 import axios from 'axios'
 
-
+const Head = styled.h1`
+margin: 18px;
+font-size: 1.9rem;
+padding: 7px;
+text-decoration: bold;
+`
+const Project = styled.div`
+display: inline-block;
+`
+const Image = styled.img`
+float: left;
+margin: 0px 10px 0px 10px;
+height: 33%;
+width: 33%;
+`
 class ProjectList extends Component {
     state = {
         projects: []
@@ -20,20 +34,20 @@ class ProjectList extends Component {
     render() {
         return (
             <div>
-                <h1>These are an overview of some of the projects I completed while at General Assembly.</h1>
+                <Head>These are some of the projects I completed while at General Assembly.</Head>
                 {this.state.projects.map((project, index) => {
                     return (
-                        <div>
-                            <img src={project.photo} alt="" />
+                        <Project>
+                            <a href={project.link_to_project}>
+                                <Image src={project.photo} alt="" />
+                            </a>
                             <h2>{project.name}</h2>
-                            <h3>Created on: {project.date_created}</h3>
-                            <h3>Description: {project.description}</h3>
-                            <h3>Technical Description: {project.technical_description}</h3>
-                            <div>
-                                <a href={project.link_to_project}>Project Demo</a>
-                            </div>
+                            <h3 class="writing2">Created on: {project.date_created}</h3>
+                            <h3 class="writing2">{project.description}</h3>
+                            <h3 class="writing2">{project.technical_description}</h3>
+                            
                             <br></br>
-                        </div>
+                        </Project>
                     )
                 })}
             </div>

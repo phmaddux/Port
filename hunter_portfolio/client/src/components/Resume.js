@@ -2,10 +2,11 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
 import styled from "styled-components";
 
-const Head = styled.div`
+const Head = styled.h1`
 margin: 18px;
 font-size: 1.9rem;
 padding: 7px;
+text-decoration: bold;
 `
 const Image = styled.div`
 display: flex;

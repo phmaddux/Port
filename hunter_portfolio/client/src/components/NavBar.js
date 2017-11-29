@@ -7,10 +7,11 @@ background-color: rgba(255, 255, 255, .1);
 display: flex;
 justify-content: space-around;
 align-items: center;
+height: 85px;
 `
 const Title = styled.div` 
-font-size: 3rem;
-margin: 7px;
+height: 0px;
+font-size: 4.5rem;
 `
 const Subtitle = styled.div` 
 font-size: 1.5rem;
@@ -36,8 +37,8 @@ class NavBar extends Component {
         return (
             <div>
                 <Header>
-                    <Title>Hunter Maddux</Title>
-                    <Subtitle>Full Stack Web Developer || Game Enthusiast || Problem Solver || Metalworker</Subtitle>
+                    <Title class="garamond">Hunter Maddux</Title>
+                    <Subtitle class="garamond">Full Stack Web Developer || Game Enthusiast || Problem Solver || Metalworker</Subtitle>
                 </Header>
                 <Navbar>
                     <Linkitem>
