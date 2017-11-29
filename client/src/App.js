@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import './App.css';
-import styled from 'styled-components'
-import axios from 'axios'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import NavBar from './components/NavBar.js'
 import Personal from './components/Personal.js'

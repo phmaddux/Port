@@ -10,8 +10,8 @@ align-items: center;
 height: 85px;
 `
 const Title = styled.div` 
-height: 0px;
 font-size: 4.5rem;
+margin-top: 60px;
 `
 const Subtitle = styled.div` 
 font-size: 1.5rem;

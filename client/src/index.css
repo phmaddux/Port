@@ -13,18 +13,19 @@ body {
 a {
   color: rgb(18, 18, 18);
   text-decoration: none;
-  font-family: "EB Garamond";
-}
-
-.garamond {
-  font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+  font-family: 'Nunito Sans', sans-serif;
 }
 .writing {
   text-indent: 50px;
-  margin: 20px 20px 20px 0px;
+  margin-left: 505px;
+  margin-right: 55px;
+  margin-bottom: 35px;
+  
 }
 .writing2 {
   text-indent: 25px;
-  margin: 20px 20px 20px 0px;
+  margin-left: 505px;
+  margin-right: 55px;
+  margin-bottom: 35px;
   font-size: 1.25rem;  
 }
