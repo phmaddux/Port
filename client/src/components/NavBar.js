@@ -24,7 +24,7 @@ font-size: 1.9rem;
 display: flex;
 justify-content: flex-end;
 align-items: center;
-margin-right: 25px;
+margin-right: 5px;
 `
 const Linkitem = styled.div`
 margin: 6px 15px 0px 15px;

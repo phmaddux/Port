@@ -14,7 +14,7 @@ whoHasIt.save
 projectVagabond = Project.new({
     name: "Project Vagabond",
     photo: "https://i.imgur.com/e9ltQKe.png",
-    description: "This project was to create a website that was about users leaving their thoughts on cities and attractions within the city. It was a group project we undertook together with 4 of us pair programming and planning all together. It was my primary experience pair programming and honestly was my favorite project as I felt I learnt the most working in a group.",
+    description: "This project was to create a website that was about users leaving their thoughts on cities and attractions within the city. It was a group project we undertook together with 4 of us pair programming and planning all together. It was my primary experience pair programming and honestly was my favorite project as I felt I learned the most working in a group.",
     technical_description: "This project was React blended with Ruby on Rails, we accomplished full CRUD functionality on the posts, used an interal API, and posted it to github.",
     link_to_project: "https://wander-wisely.herokuapp.com/",
     link_to_readMe: "https://github.com/ern19/project_vagabond/blob/master/README.md",
